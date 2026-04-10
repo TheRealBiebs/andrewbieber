@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew Bieber</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #f9f6f0;
+      --text: #1a1a1a;
+      --muted: #6b6b6b;
+      --accent: #2c5f2e;
+      --card-bg: #ffffff;
+      --border: #e0dbd0;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 1.5rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: normal;
+      letter-spacing: 0.02em;
+    }
+
+    header p {
+      margin-top: 0.75rem;
+      color: var(--muted);
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+      max-width: 860px;
+      width: 100%;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.75rem;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 2px 12px rgba(44, 95, 46, 0.1);
+    }
+
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    .card-url {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-family: 'Courier New', monospace;
+    }
+
+    .card-desc {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    footer {
+      margin-top: 4rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Andrew Bieber</h1>
+    <p>Projects &amp; adventures</p>
+  </header>
+
+  <main class="projects">
+    <a class="card" href="https://tourdepints.com" target="_blank" rel="noopener">
+      <div class="card-title">Tour de Pints</div>
+      <div class="card-url">tourdepints.com</div>
+      <div class="card-desc">Seattle's largest bike and brew.</div>
+    </a>
+
+    <a class="card" href="https://cyclingcicerone.com" target="_blank" rel="noopener">
+      <div class="card-title">Cycling Cicerone</div>
+      <div class="card-url">cyclingcicerone.com</div>
+      <div class="card-desc">Beer is better with a bike. And the Washington Beer Talk Podcast.</div>
+    </a>
+
+    <a class="card" href="https://intriguebrewing.com" target="_blank" rel="noopener">
+      <div class="card-title">Intrigue Brewing</div>
+      <div class="card-url">intriguebrewing.com</div>
+      <div class="card-desc">Murder Mysteries paired with craft beer.</div>
+    </a>
+
+    <a class="card" href="https://murdermysterymarketplace.com" target="_blank" rel="noopener">
+      <div class="card-title">Murder Mystery Marketplace</div>
+      <div class="card-url">murdermysterymarketplace.com</div>
+      <div class="card-desc">Buy and sell your own murder mystery — kits, games, and everything you need.</div>
+    </a>
+  </main>
+
+  <footer>andrewbieber.com</footer>
+</body>
+</html>
